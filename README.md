@@ -64,6 +64,11 @@ _Python3Grader.py added for those who use python 3.x instead of python 2.x so in
 ```
 $ python3 Python3Grader.py
 ```
+For keep running after closing your console, one way to do it is as following:
+
+```
+$ nohup python3 PythonGrader.py &
+```
 
 This will start the grader's HTTPServer which accepts the user's input, creates a unique file with the answer, runs the appropriate unit test (using Pytest) to check if the problem is correct, and responds back to the xqueue (and then to OpenEDX) with an answer, either correct or not, for grading the student's response.
 
